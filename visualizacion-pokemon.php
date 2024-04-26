@@ -13,8 +13,8 @@
     <section>
         <?php
             include_once("datos-conexion.php");
-    
-            $idPokemon = 152;
+            global $username, $password;
+            $idPokemon = 12;
 
             try {
                 $conexion = new PDO("mysql:host=localhost;dbname=pokedex", $username, $password);

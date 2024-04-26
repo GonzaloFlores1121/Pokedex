@@ -6,22 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="87edfaae-a29d-4a37-b5a3-1302ae29fa96" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Abra.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aerodactyl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Alakazam.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arbok.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arcanine.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Articuno.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Beedrill.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bellsprout.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blastoise.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bulbasaur.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Butterfree.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Caterpie.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chansey.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Charizard.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Charmander.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Charmeleon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DATABASE.sql" beforeDir="false" afterPath="$PROJECT_DIR$/DATABASE.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/visualizacion-pokemon.php" beforeDir="false" afterPath="$PROJECT_DIR$/visualizacion-pokemon.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +49,11 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -103,7 +95,8 @@
       <workItem from="1713478801324" duration="7367000" />
       <workItem from="1713574906582" duration="976000" />
       <workItem from="1713731535259" duration="7804000" />
-      <workItem from="1713823988017" duration="19515000" />
+      <workItem from="1713823988017" duration="20535000" />
+      <workItem from="1714084437338" duration="7912000" />
     </task>
     <servers />
   </component>

@@ -18,6 +18,7 @@ CREATE TABLE pokemon (
     descripcion LONGTEXT NOT NULL
 ) AUTO_INCREMENT=1;
 
+INSERT INTO usuario(nombre, contraseña) VALUES ('admin', '1234');
 INSERT INTO pokemon(nombre, numero, primer_tipo, segundo_tipo, imagen, descripcion)
 VALUES 
 ('Bulbasaur', 1, 'planta', 'veneno', 'Bulbasaur', 'Bulbasaur es un Pokémon de tipo planta/veneno introducido en la primera generación. 
