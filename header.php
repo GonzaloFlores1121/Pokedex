@@ -22,7 +22,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($user = $stmt->fetch(PDO::FETCH_ASSOC)) {
         $contraseña = $user["contraseña"];
-        echo "La contraseña del usuario es: " . $contraseña;
+        echo "La contraseña del usuario es: " . $contraseña  .  "<br>";
+
+        echo $passLogin .  "<br>";
         // Verificar la contraseña
         if (password_verify($passLogin, $user["contraseña"])) {
             // Iniciar la sesión y guardar el nombre de usuario en una variable de sesión
