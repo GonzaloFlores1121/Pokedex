@@ -3,4 +3,5 @@
     $dbname = "pokedex";
     $username = "root";
     $password = "";
+    //$password = "";
 ?>

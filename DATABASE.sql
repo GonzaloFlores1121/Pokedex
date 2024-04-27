@@ -5,7 +5,7 @@ USE pokedex;
 CREATE TABLE usuario (
 	id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
     nombre VARCHAR(24) NOT NULL,
-    contraseña VARCHAR(16) NOT NULL
+    contra VARCHAR(16) NOT NULL
 ) AUTO_INCREMENT=1;
 
 CREATE TABLE pokemon (
@@ -18,7 +18,8 @@ CREATE TABLE pokemon (
     descripcion LONGTEXT NOT NULL
 ) AUTO_INCREMENT=1;
 
-INSERT INTO usuario(nombre, contraseña) VALUES ('admin', '1234');
+INSERT INTO usuario(nombre, contra) VALUES ('admin', '1234');
+
 INSERT INTO pokemon(nombre, numero, primer_tipo, segundo_tipo, imagen, descripcion)
 VALUES 
 ('Bulbasaur', 1, 'planta', 'veneno', 'Bulbasaur', 'Bulbasaur es un Pokémon de tipo planta/veneno introducido en la primera generación. 
