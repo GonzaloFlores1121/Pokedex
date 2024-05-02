@@ -34,7 +34,7 @@
                         // Mostrar los detalles básicos del Pokemon
                         if($pokemon = $stmt->fetch(PDO::FETCH_ASSOC)) {
                             echo "<h2>" . $pokemon["numero"] . " " . $pokemon["nombre"] . "</h2>";
-                            echo "<figure><img src='img/" . $pokemon["imagen"] . ".png' alt='" . $pokemon["imagen"] . "' width='360px' height='360px'></figure>";
+                            echo "<figure><img src='img/" . $pokemon["imagen"] . "' alt='" . $pokemon["imagen"] . "' width='360px' height='360px'></figure>";
                             echo "<p>";
                             echo "<img src='img/Tipo_" . $pokemon["primer_tipo"] . ".png' alt='" . $pokemon["primer_tipo"] . "' width='120px' height='30px'>";
                             if($pokemon["segundo_tipo"]) {

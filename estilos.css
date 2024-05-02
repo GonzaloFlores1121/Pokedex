@@ -1,0 +1,5 @@
+.sticky-button {
+    position: sticky;
+    bottom: 10px;
+    right: 10px;
+}

@@ -43,7 +43,7 @@
 <div class="container">
     <section>
 
-        <form action="acciones-bdpokemon.php" method="post">
+        <form action="acciones-bdpokemon.php" method="post" enctype="multipart/form-data">
             <input type="hidden" name="id" id="id" value="<?php if(isset($pokemon)){echo $pokemon['id'];} ?>">
             <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre:</label>
@@ -54,17 +54,57 @@
                 <input type="number" min="1" class="form-control" name="numero" id="numero" value="<?php if(isset($pokemon)){echo $pokemon['numero'];} ?>" required>
             </div>
             <div class="mb-3">
-                <label for="primer_tipo" class="form-label">Primero Tipo:</label>
-                <input type="text" class="form-control" name="primer_tipo" id="primer_tipo" value="<?php if(isset($pokemon)){echo $pokemon['primer_tipo'];} ?>" required>
+                <label for="primer_tipo" class="form-label">Primer Tipo:</label>
+                <div class="mb-3">
+                    <select class="form-control" name="primer_tipo" id="primer_tipo" >
+                        <option value="">Seleccione tipo</option>
+                        <?php
+                        $tipos = array("planta", "fuego", "acero", "bicho", "dragon", "electrico", "fantasma", "volador", "tierra", "siniestro", "roca", "psiquico", "normal", "lucha", "hielo", "hada");
+                        foreach($tipos as $tipo) {
+                            if(isset($pokemon) && $pokemon['primer_tipo'] == $tipo){
+                                echo "<option value='" . $tipo . "' selected>" . ucfirst($tipo) . "</option>";
+                            } else {
+                                echo "<option value='" . $tipo . "'>" . ucfirst($tipo) . "</option>";
+                            }
+                        }
+                        ?>
+                    </select>
+
+                </div>
+
             </div>
             <div class="mb-3">
                 <label for="segundo_tipo" class="form-label">Segundo Tipo:</label>
-                <input type="text" class="form-control" name="segundo_tipo" id="segundo_tipo" value="<?php if(isset($pokemon)){echo $pokemon['segundo_tipo'];} ?>">
+                <div class="mb-3">
+                    <select class="form-control" name="segundo_tipo" id="segundo_tipo" >
+                        <option value="">Seleccione tipo</option>
+                        <?php
+                        $tipos = array("planta", "fuego", "acero", "bicho", "dragon", "electrico", "fantasma", "volador", "tierra", "siniestro", "roca", "psiquico", "normal", "lucha", "hielo", "hada");
+                        foreach($tipos as $tipo) {
+                            if(isset($pokemon) && $pokemon['segundo_tipo'] == $tipo){
+                                echo "<option value='" . $tipo . "' selected>" . ucfirst($tipo) . "</option>";
+                            } else {
+                                echo "<option value='" . $tipo . "'>" . ucfirst($tipo) . "</option>";
+                            }
+                        }
+                        ?>
+                    </select>
+
+                </div>
+
             </div>
+
             <div class="mb-3">
-                <label for="imagen" class="form-label">Nombre de la imagen:</label>
-                <input type="text" class="form-control" name="imagen" id="nombre_imagen" value="<?php if(isset($pokemon)){echo $pokemon["imagen"];} ?>" required>
+                <label for="imgName" class="form-label">Nombre de la imagen:</label>
+                <input type="text" class="form-control" name="imgName" id="imgName" value="<?php if(isset($pokemon)){echo $pokemon["imagen"];} ?>" required>
             </div>
+
+            <div class="mb-3">
+                <label for="img" class="form-label">Subir imagen(Solo se acepta formato .png):</label>
+            <input type="file" name="img" value="img" >
+
+            </div>
+
             <div class="mb-3">
                 <label for="descripcion" class="form-label">Descripción:</label>
                 <textarea class="form-control" rows="10" cols="40" name="descripcion" id="descripcion" required><?php if(isset($pokemon)){echo $pokemon["descripcion"];} ?></textarea>

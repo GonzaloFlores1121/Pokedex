@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87edfaae-a29d-4a37-b5a3-1302ae29fa96" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DATABASE.sql" beforeDir="false" afterPath="$PROJECT_DIR$/DATABASE.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/acciones-bdpokemon.php" beforeDir="false" afterPath="$PROJECT_DIR$/acciones-bdpokemon.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/borrar-bdpokemon.php" beforeDir="false" afterPath="$PROJECT_DIR$/borrar-bdpokemon.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cerrar-sesion.php" beforeDir="false" afterPath="$PROJECT_DIR$/cerrar-sesion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/formulario-pokemon.php" beforeDir="false" afterPath="$PROJECT_DIR$/formulario-pokemon.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Bulbasaur.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/Bulbasaur.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pokemon-vista.php" beforeDir="false" afterPath="$PROJECT_DIR$/pokemon-vista.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,26 +43,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Gonza/Desktop/samp/htdocs/Imagenes",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Gonza/Desktop/samp/htdocs/Imagenes&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Gonza\Desktop\samp\htdocs\Imagenes" />
@@ -94,6 +104,9 @@
       <workItem from="1713731535259" duration="7804000" />
       <workItem from="1713823988017" duration="20535000" />
       <workItem from="1714084437338" duration="10613000" />
+      <workItem from="1714249596493" duration="7746000" />
+      <workItem from="1714395420777" duration="24552000" />
+      <workItem from="1714587041791" duration="21235000" />
     </task>
     <servers />
   </component>

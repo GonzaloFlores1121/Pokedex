@@ -42,7 +42,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>POKEDEX</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
@@ -115,30 +115,30 @@
                             //en caso de no hayarse nada se muestran todos los pokemon de la bd pero con la leyenda pokemon no encontrado
                             if($stmt->rowCount()==0) {
                                 echo "<p><strong>pokemon no encontrado</strong></p>";
-                                $stmt = $conexion->prepare("SELECT * FROM pokemon");
+                                $stmt = $conexion->prepare("SELECT * FROM pokemon ORDER BY numero ASC");
+
                                 $stmt->execute();
                             }
                             //en el caso de que no se haya apretado nada o es la primera vez ke se entre al index se mostrara todos los pokemon de la bd
                         }else {
-                            $stmt = $conexion->prepare("SELECT * FROM pokemon");
+                            $stmt = $conexion->prepare("SELECT * FROM pokemon ORDER BY numero ASC");
+
                             $stmt->execute();
                         }
 
                         //inserta la tabla de los pokemones
                         while($pokemon = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                            echo "<tr onclick=" . '"window.location.href=' . "'pokemon-vista.php?idpokemon=" . $pokemon["id"] . "'" . ';">';
-                            echo "<td><img src='img/" . $pokemon["imagen"] . ".png' alt='" . $pokemon["imagen"] . "' width='40px' height='40px'></td>";
-                            echo "<td><img src='img/Tipo_" . $pokemon["primer_tipo"] . ".png' alt='" . $pokemon["primer_tipo"] . "' width='40px' height='10px'>";
+                            echo "<tr>";
+                            echo "<td><a href='pokemon-vista.php?idpokemon=" . $pokemon["id"] . "'><img src='img/" . $pokemon["imagen"] . "' alt='" . $pokemon["imagen"] . "' width='80px' height='80px'></a></td>";
+                            echo "<td><img src='img/Tipo_" . $pokemon["primer_tipo"] . ".png' alt='" . $pokemon["primer_tipo"] . "' width='40px' height='15px'>";
                             if($pokemon["segundo_tipo"]) {
-                                echo "<img src='img/Tipo_" . $pokemon["segundo_tipo"] . ".png' alt='" . $pokemon["segundo_tipo"] . "' width='40px' height='10px'>";
+                                echo "<img src='img/Tipo_" . $pokemon["segundo_tipo"] . ".png' alt='" . $pokemon["segundo_tipo"] . "'width='40px' height='15px'>";
                             }
                             echo "</td>";
                             echo "<td>" . $pokemon["numero"] . "</td>";
                             echo "<td>" . $pokemon["nombre"] . "</td>";
                             if(isset($_SESSION["admin"])) {
-                                //un btn para borrar pokemon solo para el modo admin
-                                echo "<td ><a href='borrar-bdpokemon.php?idPokemon=" . $pokemon["id"] . "'><input type='button' value='Baja'></a>";
-                                //un boton para modificar pokemon solo para el modo admin
+                                echo "<td><a href='borrar-bdpokemon.php?idPokemon=" . $pokemon["id"] . "' onclick=\"return confirm('¿Estás seguro de que quieres borrar este Pokémon?');\"><input type='button' value='Baja'></a>";
                                 echo "<a href='formulario-pokemon.php?tipo=actualizar&idPokemon=" . $pokemon["id"] . "'><input type='button' value='Modificación'></a></td>";
                             }
                             echo "</tr>";
@@ -154,12 +154,11 @@
                     </tbody>
                 </table>
             </div>
-        </form><br>
 
         <!--un btn para agregar un nuevo pokemon solo si se logea el admin-->
         <?php if(isset($_SESSION["admin"])): ?>
-            <form action="formulario-pokemon.php?tipo=agregar" method="post">
-                <input type="submit" name="agregar" value="Nuevo Pokémon">
+            <form action="formulario-pokemon.php?tipo=agregar" method="post" class="sticky-button">
+                <input type="submit" name="agregar" value="Nuevo Pokémon" class="btn btn-primary">
             </form>
         <?php endif; ?>
     </section>

@@ -10,9 +10,20 @@
 
             $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-            $stmt = $conexion->prepare("DELETE FROM pokemon WHERE id=:id");
 
+            $stmt = $conexion->prepare("SELECT imagen FROM pokemon WHERE id=:id");
             $stmt->execute(array(":id"=>$idPokemon));
+            $pokemon = $stmt->fetch(PDO::FETCH_ASSOC);
+            $imagen = $pokemon["imagen"];
+
+
+            $stmt = $conexion->prepare("DELETE FROM pokemon WHERE id=:id");
+            $stmt->execute(array(":id"=>$idPokemon));
+
+
+            if (file_exists("img/" . $imagen)) {
+                unlink("img/" . $imagen);
+            }
 
         }catch(Exception $e) {
             die("Error de conexión: " . $e->getMessage());
