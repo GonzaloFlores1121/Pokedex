@@ -1,28 +1,30 @@
 <?php
-    include_once("datos-conexion.php");
-    global $username, $password;
+include_once("datos-conexion.php");
+global $username, $password;
+session_start();
 
-    try{
-        $conexion = new PDO("mysql:host=localhost;dbname=pokedex", $username, $password);
 
-        $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+try{
+    $conexion = new PDO("mysql:host=localhost;dbname=pokedex", $username, $password);
 
-        if(isset($_GET["tipo"])) {//verifica que se haya tocado uno de los botones del index tanto modificar como nuevo pokemon
-            if($_GET["tipo"]=="actualizar"){//en el caso de que se haya apretado el btn modificar se creara la variable pokemon con los datos del mismo
-                $stmt = $conexion->prepare("SELECT * FROM pokemon WHERE id=:id");
-                $stmt->execute(array(":id"=>$_GET["idPokemon"]));//en el btn modificar como param tambien se envia el id para el where del query
-                $pokemon = $stmt->fetch(PDO::FETCH_ASSOC);
-            }
-        }else {//en caso de no tocar ninguno de los dos btn del index te redirige al index
-            header("location:index.php");
-            exit();
-        }        
-    
-    }catch(Exception $e) {
-        die("Error de conexión: " . $e->getMessage());
-    }finally {
-        $conexion=null;
+    $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    if(isset($_GET["tipo"])) {//verifica que se haya tocado uno de los botones del index tanto modificar como nuevo pokemon
+        if($_GET["tipo"]=="actualizar"){//en el caso de que se haya apretado el btn modificar se creara la variable pokemon con los datos del mismo
+            $stmt = $conexion->prepare("SELECT * FROM pokemon WHERE id=:id");
+            $stmt->execute(array(":id"=>$_GET["idPokemon"]));//en el btn modificar como param tambien se envia el id para el where del query
+            $pokemon = $stmt->fetch(PDO::FETCH_ASSOC);
+        }
+    }else {//en caso de no tocar ninguno de los dos btn del index te redirige al index
+        header("location:index.php");
+        exit();
     }
+
+}catch(Exception $e) {
+    die("Error de conexión: " . $e->getMessage());
+}finally {
+    $conexion=null;
+}
 
 
 ?>
@@ -37,8 +39,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+<?php if (isset($_SESSION["error_message"])): ?>
+    <div class="alert alert-danger" role="alert">
+        <?php echo $_SESSION["error_message"]; ?>
+    </div>
+
+<?php endif; ?>
 <header class="text-center mb-4">
-    <h1><img src="img/Poke_Ball.png" alt="logo" width="27px" height="27px">   POKEDEX</h1>
+    <h1><img src="img/Poke_Ball.png" alt="logo" height="48px">   POKEDEX</h1>
 </header>
 <div class="container">
     <section>
@@ -95,13 +103,8 @@
             </div>
 
             <div class="mb-3">
-                <label for="imgName" class="form-label">Nombre de la imagen:</label>
-                <input type="text" class="form-control" name="imgName" id="imgName" value="<?php if(isset($pokemon)){echo $pokemon["imagen"];} ?>" required>
-            </div>
-
-            <div class="mb-3">
-                <label for="img" class="form-label">Subir imagen(Solo se acepta formato .png):</label>
-            <input type="file" name="img" value="img" >
+                <label for="img" class="form-label">Subir imagen(Solo se acepta formato .png, .jpg, .jpeg y .gif):</label>
+                <input type="file" name="img" id="img" value="img" >
 
             </div>
 
@@ -115,6 +118,7 @@
                 <?php else: ?>
                     <input type="submit" class="btn btn-primary" name="agregar" value="Agregar POKEMON">
                 <?php endif; ?>
+
             </div>
         </form>
         <a href="index.php" class="btn btn-secondary">Volver atrás</a>

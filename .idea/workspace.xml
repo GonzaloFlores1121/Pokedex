@@ -5,15 +5,180 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87edfaae-a29d-4a37-b5a3-1302ae29fa96" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DATABASE.sql" beforeDir="false" afterPath="$PROJECT_DIR$/DATABASE.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/acciones-bdpokemon.php" beforeDir="false" afterPath="$PROJECT_DIR$/acciones-bdpokemon.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/borrar-bdpokemon.php" beforeDir="false" afterPath="$PROJECT_DIR$/borrar-bdpokemon.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cerrar-sesion.php" beforeDir="false" afterPath="$PROJECT_DIR$/cerrar-sesion.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/formulario-pokemon.php" beforeDir="false" afterPath="$PROJECT_DIR$/formulario-pokemon.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Bulbasaur.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/Bulbasaur.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Abra.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Aerodactyl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Alakazam.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Arbok.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Arcanine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Articuno.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Beedrill.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Bellsprout.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Blastoise.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Bulbasaur.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Butterfree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Caterpie.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Chansey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Charizard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Charmander.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Charmeleon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Clefable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Clefairy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Cloyster.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Cubone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Dewgong.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Diglett.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Ditto.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Dodrio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Doduo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Dragonair.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Dragonite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Dratini.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Drowzee.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Dugtrio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Eevee.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Ekans.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Electabuzz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Electrode.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Exeggcute.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Exeggutor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Farfetch_d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Fearow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Flareon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Gastly.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Gengar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Geodude.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Gloom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Golbat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Goldeen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Golduck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Golem.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Graveler.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Grimer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Growlithe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Gyarados.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Haunter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Hitmonchan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Hitmonlee.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Horsea.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Hypno.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Ivysaur.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Jigglypuff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Jolteon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Jynx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Kabuto.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Kabutops.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Kadabra.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Kakuna.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Kangaskhan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Kingler.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Koffing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Krabby.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Lapras.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Lickitung.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Machamp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Machoke.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Machop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Magikarp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Magmar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Magnemite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Magneton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Mankey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Marowak.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Meowth.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Metapod.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Mew.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Mewtwo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Moltres.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Mr._Mime.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Muk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Nidoking.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Nidoqueen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Nidoran_hembra.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Nidoran_macho.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Nidorina.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Nidorino.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Ninetales.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Oddish.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Omanyte.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Omastar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Onix.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Paras.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Parasect.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Persian.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Pidgeot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Pidgeotto.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Pidgey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Pikachu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Pinsir.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Poke_Ball.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Poliwag.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Poliwhirl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Poliwrath.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Ponyta.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Porygon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Primeape.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Psyduck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Raichu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Rapidash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Raticate.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Rattata.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Rhydon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Rhyhorn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Sandshrew.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Sandslash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Scyther.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Seadra.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Seaking.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Seel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Shellder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Slowbro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Slowpoke.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Snorlax.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Spearow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Squirtle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Starmie.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Staryu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Tangela.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Tauros.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Tentacool.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Tentacruel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Tipo_acero.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Tipo_agua.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Tipo_bicho.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Tipo_dragon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Tipo_electrico.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Tipo_fantasma.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Tipo_fuego.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Tipo_hada.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Tipo_hielo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Tipo_lucha.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Tipo_normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Tipo_planta.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Tipo_psiquico.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Tipo_roca.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Tipo_siniestro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Tipo_tierra.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Tipo_veneno.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Tipo_volador.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Vaporeon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Venomoth.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Venonat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Venusaur.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Victreebel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Vileplume.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Voltorb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Vulpix.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Wartortle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Weedle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Weepinbell.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Weezing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Wigglytuff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Zapdos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Zubat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/pancho.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pokemon-vista.php" beforeDir="false" afterPath="$PROJECT_DIR$/pokemon-vista.php" afterDir="false" />
     </list>
@@ -106,7 +271,8 @@
       <workItem from="1714084437338" duration="10613000" />
       <workItem from="1714249596493" duration="7746000" />
       <workItem from="1714395420777" duration="24552000" />
-      <workItem from="1714587041791" duration="21235000" />
+      <workItem from="1714587041791" duration="21402000" />
+      <workItem from="1714954043507" duration="7408000" />
     </task>
     <servers />
   </component>
